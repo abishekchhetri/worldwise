@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CityContext";
 import useGeoLocation from "../../hooks/useGeoLocation";
 import Button from "./Button";
+// the main learning here is dom synchronization with the state and the url itself
 function Map() {
   const { isLoading, position, error, getPosition } = useGeoLocation();
   const [mapLocation, setMapLocation] = useState([40, 0]);
