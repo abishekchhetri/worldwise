@@ -22,6 +22,7 @@ function Map() {
   const lng = +location.get("lng");
   const { cities } = useCities();
 
+  // checking for git going on
   //synchronizing change in url with lat and lng to the map state, example if url changes with lat and lng we synchronize it with the overall map component
   useEffect(() => {
     if (lat !== 0 && lng !== 0) setMapLocation([lat, lng]);

@@ -13,6 +13,7 @@ import City from "./components/City";
 import Form from "./components/Form";
 import { CityProvider } from "./contexts/CityContext";
 
+//this is for the routers that we primarily decide from this main app component
 function App() {
   return (
     <CityProvider>
